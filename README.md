@@ -2,8 +2,8 @@
 
 由微信官方文档editor的事例和微信云开发官方事例改编而来
 
-##主页面
-###初始化
+## 主页面
+### 初始化
 初始化时用wx.login和jscode2session来获取用户的openid，openid用于标识每个人的便签存档。
 ```
         wx.request({
@@ -35,7 +35,7 @@ wx.checkIsSupportSoterAuthentication({
     <view class="power_info" data-type="{{power}}" bindtap="onClickVirefied">
     ...
 ```
-###生物验证进入编辑器
+### 生物验证进入编辑器
 通过点击按键触发onClickVirefied函数，验证成功则跳转至编辑器，跳转时传递获取的openId
 ```
 wx.startSoterAuthentication({
@@ -50,7 +50,7 @@ wx.startSoterAuthentication({
 
 ## 编辑器页面
 编辑器页面由微信小程序editor官方文档改编而来，增加了保存和重置按键，删除了添加图片按键
-###保存按键
+### 保存按键
 利用云函数，在云端调用数据库的添加函数，将获取到的已编辑的文本保存到数据库
 ```
 this.editorCtx.getContents().then((e)=>{
@@ -80,7 +80,7 @@ myCollection.doc(res.data[0]._id).update({
             html: event.html
           }
 ```
-###重置按键
+### 重置按键
 直接从数据库通过openId作为标识获取之前保存的文本
 ```
 resetInput(e){
