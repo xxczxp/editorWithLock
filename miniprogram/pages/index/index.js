@@ -86,18 +86,7 @@ Page({
       }
     })
     
-    // wx.startSoterAuthentication({
-    //   challenge: '12345',
-    //   requestAuthModes: ['fingerPrint'],
-    //    success : (e)=>{
-    //     console.log(e)
-    //    },
-    //    fail: (e) => {
-    //     console.log(e)
-    //   }
-    // })
-
-    // console.log("asdf")
+    this.onClickLogin()
   },
 
   onClickVirefied(e) {
