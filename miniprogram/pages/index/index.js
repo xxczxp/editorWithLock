@@ -95,7 +95,9 @@ Page({
       challenge: '12345',
       requestAuthModes: [verifiedMethod],
        success : (e)=>{
-        console.log(e)
+        wx.navigateTo({
+          url: `/pages/editor/index?envId=${this.data.selectedEnv.envId}`,
+        });
        },
        fail: (e) => {
         console.log(e)
