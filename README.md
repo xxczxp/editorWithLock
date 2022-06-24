@@ -1,6 +1,7 @@
 # 智能锁便签
 
 由微信官方文档editor的事例和微信云开发官方事例改编而来
+- [github链接]](https://github.com/xxczxp/editorWithLock)
 
 ## 主页面
 ### 初始化
