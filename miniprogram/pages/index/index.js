@@ -96,7 +96,7 @@ Page({
       requestAuthModes: [verifiedMethod],
        success : (e)=>{
         wx.navigateTo({
-          url: `/pages/editor/index?envId=${this.data.selectedEnv.envId}`,
+          url: `/pages/editor/editor?openId=${this.data.openId}`,
         });
        },
        fail: (e) => {
@@ -179,7 +179,7 @@ Page({
 
   jumpPage(e) {
     wx.navigateTo({
-      url: `/pages/${e.currentTarget.dataset.page}/index?envId=${this.data.selectedEnv.envId}`,
+      url: `/pages/${e.currentTarget.dataset.page}/index?envId=${this.data.selectedEnv.envId}`, 
     });
   },
 

@@ -1,12 +1,12 @@
 <view class="container" style="height:{{editorHeight}}px;">
-  <editor id="editor" class="ql-container" placeholder="{{placeholder}}" bindstatuschange="onStatusChange" bindready="onEditorReady" bindinput="onInputChange">
+  <editor id="editor" class="ql-container" placeholder="{{placeholder}}" bindstatuschange="onStatusChange" bindready="onEditorReady">
   </editor>
 </view>
 
-<view class="toolbar" catchtouchend="format"  style="bottom: {{(isIOS ? keyboardHeight : 0)+50}}px">
+<view class="toolbar" style="bottom: {{(isIOS ? keyboardHeight : 0)+50}}px">
   <!-- <i class="iconfont icon-charutupian" catchtouchend="insertImage"></i> -->
-  <i class="" >保存</i>
-  <i class="" >重置</i>
+  <i class="" catchtouchend="saveInput">保存</i>
+  <i class="" catchtouchend="resetInput">重置</i>
 
   
 </view>
